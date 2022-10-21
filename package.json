@@ -1,0 +1,36 @@
+{
+  "name": "webportal-skylinks-migration",
+  "version": "1.0.0",
+  "description": "Migrate uploaded skylinks from one Skynet portal to another",
+  "main": "src/index.js",
+  "type": "module",
+  "author": "kwypchlo@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "ncc build src"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,html,css,scss}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "got": "^12.5.2",
+    "inquirer": "^9.1.4",
+    "lowdb": "^4.0.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "eslint": "^8.25.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
